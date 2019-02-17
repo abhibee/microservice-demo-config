@@ -1,0 +1,6 @@
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${DISCOVERY_HOST}:${SERVER_PORT}/eureka/

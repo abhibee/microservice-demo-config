@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          zkNodes: ${ZOOKEEPER_HOST}
+          defaultZkPort: ${ZOOKEEPER_PORT}
+          brokers: ${KAFKA_HOST}
+          defaultBrokerPort: ${KAFKA_PORT}
+          zkSessionTimeout: 20000
+          zkConnectionTimeout: 20000

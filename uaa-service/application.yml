@@ -1,0 +1,23 @@
+security:
+  password:
+    strength: 10
+  token:
+    max-age-seconds: 604800 # 1 week
+    secret: bkr5aI5AAtS5kbwN
+server:
+  port: 8002
+monitoring:
+  matchers:
+    - name: api.user
+      method: GET
+      matcher: /api/user
+    - name: api.token
+      method: GET
+      matcher: /api/token
+    - name: prometheus
+      method: GET
+      matcher: /prometheus
+    - name: metrics
+      method: GET
+      matcher: /metrics
+
